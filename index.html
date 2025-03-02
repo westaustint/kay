@@ -49,7 +49,7 @@
         header {
             background-color: var(--primary);
             color: white;
-            padding: 7rem 0;
+            padding: 3.5rem 0;
             position: relative;
         }
         
@@ -126,7 +126,7 @@
         
         /* Sections */
         section {
-            padding: 5rem 0;
+            padding: 2.5rem 0;
         }
         
         section:nth-child(even) {
@@ -135,11 +135,11 @@
         
         .section-title {
             font-size: 1.6rem;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
             text-align: center;
             color: var(--primary);
             position: relative;
-            padding-bottom: 1rem;
+            padding-bottom: 0.5rem;
             font-weight: 300;
             letter-spacing: 3px;
             text-transform: uppercase;
@@ -160,8 +160,8 @@
         /* Portfolio Grid */
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
         }
         
         .portfolio-item {
@@ -181,23 +181,23 @@
         }
         
         .portfolio-content {
-            padding: 1.8rem;
+            padding: 1.2rem;
         }
         
         .portfolio-title {
-            font-size: 1.3rem;
-            margin-bottom: 0.6rem;
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
             color: var(--primary);
             font-weight: 400;
-            line-height: 1.4;
+            line-height: 1.3;
             font-style: italic;
         }
         
         .portfolio-text {
             color: #777;
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-            line-height: 1.6;
+            margin-bottom: 0.8rem;
+            font-size: 0.8rem;
+            line-height: 1.5;
             font-family: 'Montserrat', sans-serif;
         }
         
@@ -243,10 +243,10 @@
         /* Strategy Section */
         .strategy-card {
             background-color: white;
-            padding: 3rem 2rem;
+            padding: 1.8rem 1.5rem;
             border-radius: 0;
             box-shadow: none;
-            margin-bottom: 3rem;
+            margin-bottom: 1.5rem;
             transition: var(--transition);
             border-left: 1px solid var(--primary);
             position: relative;
@@ -270,33 +270,33 @@
         .card-header {
             display: flex;
             align-items: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
         
         .card-icon {
             color: white;
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 1.2rem;
-            font-size: 1.2rem;
+            margin-right: 1rem;
+            font-size: 1rem;
             background-color: var(--primary);
             box-shadow: 0 3px 10px rgba(157, 122, 165, 0.2);
         }
         
         .card-title {
             color: var(--primary);
-            font-size: 1.3rem;
-            font-weight: 500;
+            font-size: 1.1rem;
+            font-weight: 400;
         }
         
         .card-description {
             color: #777;
-            line-height: 1.7;
-            font-size: 0.95rem;
+            line-height: 1.5;
+            font-size: 0.85rem;
         }
         
         /* Social Media Section */
@@ -316,11 +316,10 @@
         
         .social-card {
             background-color: rgba(255, 255, 255, 0.1);
-            padding: 2.5rem;
-            border-radius: 6px;
-            margin-bottom: 2.5rem;
+            padding: 1.8rem 1.5rem;
+            border-radius: 0;
+            margin-bottom: 1.5rem;
             transition: var(--transition);
-            backdrop-filter: blur(5px);
         }
         
         .social-card:hover {
@@ -334,30 +333,31 @@
         
         .metrics-container {
             background-color: white;
-            padding: 2.5rem;
-            border-radius: 6px;
-            margin-top: 2.5rem;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            padding: 1.8rem;
+            border-radius: 0;
+            margin-top: 1.5rem;
+            box-shadow: none;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .metrics-title {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
             color: var(--primary);
             text-align: center;
-            font-weight: 500;
+            font-weight: 400;
         }
         
         .metrics-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 3rem;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 0.8rem;
+            margin-bottom: 1.5rem;
         }
         
         .metric-item {
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 1rem 0.5rem;
             background-color: transparent;
             transition: var(--transition);
             border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -368,45 +368,48 @@
         }
         
         .metric-value {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             font-weight: 300;
             color: var(--primary);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.2rem;
         }
         
         .metric-label {
             color: #777;
             font-weight: 400;
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             letter-spacing: 0.5px;
         }
         
         .goals-container {
-            margin-top: 2.5rem;
-            background-color: #fcfaff;
-            padding: 2rem;
-            border-radius: 6px;
-            border-left: 2px solid var(--accent);
+            margin-top: 1.5rem;
+            background-color: transparent;
+            padding: 0.8rem 1.2rem;
+            border-radius: 0;
+            border-left: 1px solid var(--accent);
         }
         
         .goals-container h4 {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            margin-bottom: 0.8rem;
             color: var(--primary);
-            font-weight: 500;
+            font-weight: 400;
         }
         
         .goals-container ul {
             list-style-type: none;
-            padding-left: 0.5rem;
+            padding-left: 0.3rem;
+            column-count: 2;
+            column-gap: 2rem;
         }
         
         .goals-container li {
-            margin-bottom: 1rem;
+            margin-bottom: 0.6rem;
             position: relative;
-            padding-left: 1.5rem;
+            padding-left: 1rem;
             color: #666;
-            font-size: 0.95rem;
+            font-size: 0.8rem;
+            break-inside: avoid;
         }
         
         .goals-container li:before {
@@ -458,21 +461,21 @@
         }
         
         .contact-icon {
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: var(--primary);
-            margin-bottom: 1.2rem;
+            margin-bottom: 0.8rem;
         }
         
         .contact-title {
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
             color: var(--primary);
-            font-weight: 500;
+            font-weight: 400;
         }
         
         .contact-info {
             color: #777;
-            font-size: 0.95rem;
+            font-size: 0.8rem;
         }
         
         /* Footer */
@@ -492,32 +495,33 @@
         /* Media Queries */
         @media (max-width: 768px) {
             .header-title {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
             
             .header-subtitle {
-                font-size: 1.1rem;
+                font-size: 0.9rem;
             }
             
             .nav-link {
-                padding: 1rem 1.2rem;
+                padding: 0.8rem 1rem;
             }
             
             .portfolio-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
             }
             
-            .strategy-card,
-            .social-card,
-            .metrics-container,
-            .contact-method {
-                padding: 1.8rem;
+            .metrics-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .goals-container ul {
+                column-count: 1;
             }
         }
         
         @media (max-width: 576px) {
             .section-title {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
             
             .nav-list {
@@ -526,8 +530,12 @@
             }
             
             .nav-link {
-                padding: 0.8rem 0.6rem;
-                font-size: 0.8rem;
+                padding: 0.6rem 0.5rem;
+                font-size: 0.7rem;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: 1fr;
             }
             
             .metrics-grid {
@@ -540,11 +548,11 @@
             }
             
             .card-icon {
-                margin: 0 auto 1rem;
+                margin: 0 auto 0.6rem;
             }
             
             .card-title {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
     </style>
