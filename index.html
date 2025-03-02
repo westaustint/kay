@@ -7,61 +7,79 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #1e3142;
-            --accent: #c1f021;
-            --secondary: #4d9bdc;
-            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --primary: #6e5773;
+            --secondary: #a786ab;
+            --accent: #e2b4bd;
+            --light: #fdfbff;
+            --dark: #333;
+            --transition: all 0.3s ease;
         }
         
-        * {margin: 0; padding: 0; box-sizing: border-box;}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
         body {
-            font-family: 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f7f9fc;
+            font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+            line-height: 1.6; 
+            color: var(--dark);
+            background-color: var(--light);
+            letter-spacing: 0.4px;
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0 2rem;
         }
         
         a {
             text-decoration: none;
-            color: var(--secondary);
-            transition: all 0.3s;
+            color: var(--primary);
+            transition: var(--transition);
         }
         
-        a:hover {color: var(--accent);}
-        img {max-width: 100%;}
+        a:hover {
+            color: var(--accent);
+        }
         
         /* Header */
         header {
             background-color: var(--primary);
             color: white;
-            padding: 5rem 0;
-            text-align: center;
+            padding: 7rem 0;
+            position: relative;
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
         }
         
         .header-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 1rem;
+            font-size: 3.2rem;
+            font-weight: 300;
+            letter-spacing: 8px;
+            margin-bottom: 0.8rem;
+            font-style: italic;
         }
         
         .header-subtitle {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             font-weight: 300;
+            opacity: 0.9;
+            letter-spacing: 3px;
+            text-transform: uppercase;
         }
         
         /* Navigation */
         nav {
             background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -75,35 +93,57 @@
         
         .nav-link {
             display: block;
-            padding: 1.2rem 2rem;
+            padding: 1.2rem 2.5rem;
             color: var(--primary);
-            font-weight: 500;
+            font-weight: 400;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
             position: relative;
+            transition: var(--transition);
+            font-family: 'Montserrat', sans-serif;
         }
         
         .nav-link::after {
             content: '';
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 0;
-            height: 3px;
+            height: 2px;
             background-color: var(--accent);
             transition: width 0.3s;
         }
         
-        .nav-link:hover::after {width: 100%;}
+        .nav-link:hover {
+            color: var(--primary);
+        }
+        
+        .nav-link:hover::after {
+            width: 40%;
+        }
         
         /* Sections */
-        section {padding: 5rem 0;}
+        section {
+            padding: 5rem 0;
+        }
+        
+        section:nth-child(even) {
+            background-color: white;
+        }
         
         .section-title {
-            font-size: 2.2rem;
-            margin-bottom: 3rem;
+            font-size: 1.6rem;
+            margin-bottom: 4rem;
             text-align: center;
             color: var(--primary);
             position: relative;
-            padding-bottom: 0.5rem;
+            padding-bottom: 1rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-style: italic;
         }
         
         .section-title::after {
@@ -112,48 +152,53 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 60px;
-            height: 3px;
+            width: 30px;
+            height: 1px;
             background-color: var(--accent);
         }
         
         /* Portfolio Grid */
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 2rem;
         }
         
         .portfolio-item {
             background-color: white;
-            border-radius: 10px;
+            border-radius: 0;
             overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: none;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
         }
         
         .portfolio-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            transform: translateX(5px);
+            border-color: var(--accent);
         }
         
-        .portfolio-img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
+        .portfolio-content {
+            padding: 1.8rem;
         }
-        
-        .portfolio-content {padding: 1.5rem;}
         
         .portfolio-title {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+            margin-bottom: 0.6rem;
             color: var(--primary);
+            font-weight: 400;
+            line-height: 1.4;
+            font-style: italic;
         }
         
         .portfolio-text {
-            color: #666;
-            margin-bottom: 1rem;
+            color: #777;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            font-family: 'Montserrat', sans-serif;
         }
         
         .portfolio-tags {
@@ -163,35 +208,72 @@
         }
         
         .portfolio-tag {
-            background-color: rgba(193, 240, 33, 0.15);
+            background-color: transparent;
             color: var(--primary);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
+            padding: 0.3rem 0;
+            margin-right: 1rem;
+            font-size: 0.7rem;
+            font-weight: 400;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+        }
+        
+        .portfolio-tag:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--accent);
+            transition: width 0.3s;
+        }
+        
+        .portfolio-tag:hover {
+            color: var(--accent);
+        }
+        
+        .portfolio-tag:hover:after {
+            width: 100%;
         }
         
         /* Strategy Section */
-        .strategy-section {background-color: white;}
-        
         .strategy-card {
-            background-color: #f7f9fc;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-            margin-bottom: 2rem;
-            transition: transform 0.3s;
+            background-color: white;
+            padding: 3rem 2rem;
+            border-radius: 0;
+            box-shadow: none;
+            margin-bottom: 3rem;
+            transition: var(--transition);
+            border-left: 1px solid var(--primary);
+            position: relative;
         }
         
-        .strategy-card:hover {transform: translateY(-5px);}
+        .strategy-card:after {
+            content: '';
+            position: absolute;
+            left: -1px;
+            top: 0;
+            width: 1px;
+            height: 0;
+            background-color: var(--accent);
+            transition: height 0.4s ease;
+        }
+        
+        .strategy-card:hover:after {
+            height: 100%;
+        }
         
         .card-header {
             display: flex;
             align-items: center;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
         
         .card-icon {
-            background-color: var(--primary);
             color: white;
             width: 50px;
             height: 50px;
@@ -199,24 +281,22 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 1rem;
+            margin-right: 1.2rem;
             font-size: 1.2rem;
+            background-color: var(--primary);
+            box-shadow: 0 3px 10px rgba(157, 122, 165, 0.2);
         }
         
         .card-title {
             color: var(--primary);
             font-size: 1.3rem;
+            font-weight: 500;
         }
         
         .card-description {
-            color: #666;
-            margin-bottom: 1.5rem;
-        }
-        
-        .card-image img {
-            width: 100%;
-            border-radius: 5px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            color: #777;
+            line-height: 1.7;
+            font-size: 0.95rem;
         }
         
         /* Social Media Section */
@@ -225,105 +305,118 @@
             color: white;
         }
         
-        .social-media-section .section-title {color: white;}
+        .social-media-section .section-title {
+            color: white;
+        }
+        
+        .social-media-section .section-title::after {
+            background-color: white;
+            opacity: 0.8;
+        }
         
         .social-card {
             background-color: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
-            border-radius: 10px;
-            margin-bottom: 2rem;
+            padding: 2.5rem;
+            border-radius: 6px;
+            margin-bottom: 2.5rem;
+            transition: var(--transition);
+            backdrop-filter: blur(5px);
+        }
+        
+        .social-card:hover {
+            background-color: rgba(255, 255, 255, 0.15);
         }
         
         .social-card .card-icon {
-            background-color: var(--accent);
+            background-color: white;
             color: var(--primary);
         }
-        
-        .social-examples {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-            margin-top: 1.5rem;
-        }
-        
-        .social-examples img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 8px;
-            transition: transform 0.3s;
-        }
-        
-        .social-examples img:hover {transform: scale(1.05);}
         
         .metrics-container {
             background-color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            margin-top: 2rem;
-            box-shadow: var(--shadow);
+            padding: 2.5rem;
+            border-radius: 6px;
+            margin-top: 2.5rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
         }
         
         .metrics-title {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
             color: var(--primary);
             text-align: center;
+            font-weight: 500;
         }
         
         .metrics-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
         }
         
         .metric-item {
             text-align: center;
-            padding: 1rem;
-            background-color: #f7f9fc;
-            border-radius: 8px;
+            padding: 2rem 1rem;
+            background-color: transparent;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        
+        .metric-item:hover .metric-value {
+            color: var(--accent);
         }
         
         .metric-value {
-            font-size: 2rem;
-            font-weight: bold;
+            font-size: 2.2rem;
+            font-weight: 300;
             color: var(--primary);
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.5rem;
         }
         
-        .metric-label {color: #666;}
-        
-        .content-breakdown {
-            margin-top: 2rem;
-            text-align: center;
-        }
-        
-        .content-breakdown h4 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: var(--primary);
+        .metric-label {
+            color: #777;
+            font-weight: 400;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
         }
         
         .goals-container {
-            margin-top: 2rem;
-            background-color: #f7f9fc;
-            padding: 1.5rem;
-            border-radius: 8px;
+            margin-top: 2.5rem;
+            background-color: #fcfaff;
+            padding: 2rem;
+            border-radius: 6px;
+            border-left: 2px solid var(--accent);
         }
         
         .goals-container h4 {
             font-size: 1.2rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             color: var(--primary);
+            font-weight: 500;
         }
         
         .goals-container ul {
-            list-style-position: inside;
-            padding-left: 1rem;
+            list-style-type: none;
+            padding-left: 0.5rem;
         }
         
-        .goals-container li {margin-bottom: 0.5rem;}
+        .goals-container li {
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 1.5rem;
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .goals-container li:before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
         
         /* Contact Section */
         .contact-methods {
@@ -331,36 +424,56 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 2rem;
-            margin-top: 2rem;
+            margin-top: 2.5rem;
         }
         
         .contact-method {
             background-color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
+            padding: 2.5rem 1.5rem;
+            border-radius: 0;
+            box-shadow: none;
             text-align: center;
             flex: 1;
-            min-width: 250px;
-            max-width: 300px;
-            transition: transform 0.3s;
+            min-width: 220px;
+            max-width: 280px;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            position: relative;
         }
         
-        .contact-method:hover {transform: translateY(-10px);}
+        .contact-method:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -1px;
+            width: 0;
+            height: 1px;
+            background-color: var(--accent);
+            transform: translateX(-50%);
+            transition: width 0.3s ease;
+        }
+        
+        .contact-method:hover:after {
+            width: 80%;
+        }
         
         .contact-icon {
             font-size: 2rem;
-            color: var(--secondary);
-            margin-bottom: 1rem;
+            color: var(--primary);
+            margin-bottom: 1.2rem;
         }
         
         .contact-title {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-bottom: 0.5rem;
             color: var(--primary);
+            font-weight: 500;
         }
         
-        .contact-info {color: #666;}
+        .contact-info {
+            color: #777;
+            font-size: 0.95rem;
+        }
         
         /* Footer */
         footer {
@@ -372,39 +485,54 @@
         
         .footer-text {
             opacity: 0.8;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
         }
         
         /* Media Queries */
         @media (max-width: 768px) {
-            .header-title {font-size: 2.5rem;}
-            .header-subtitle {font-size: 1.2rem;}
-            .nav-link {padding: 1rem 1.2rem;}
-            .portfolio-grid {grid-template-columns: 1fr;}
-            
-            .social-examples {
-                flex-direction: column;
-                align-items: center;
+            .header-title {
+                font-size: 2.2rem;
             }
             
-            .social-examples img {
-                width: 100%;
-                max-width: 300px;
-                height: auto;
-                aspect-ratio: 1;
+            .header-subtitle {
+                font-size: 1.1rem;
             }
-        }
-        
-        @media (max-width: 576px) {
-            .section-title {font-size: 1.8rem;}
-            .nav-list {width: 100%; justify-content: space-between;}
-            .nav-link {padding: 1rem 0.6rem; font-size: 0.9rem;}
-            .metrics-grid {grid-template-columns: repeat(2, 1fr);}
+            
+            .nav-link {
+                padding: 1rem 1.2rem;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
             
             .strategy-card,
             .social-card,
             .metrics-container,
-            .contact-method {padding: 1.2rem;}
+            .contact-method {
+                padding: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .nav-list {
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .nav-link {
+                padding: 0.8rem 0.6rem;
+                font-size: 0.8rem;
+            }
+            
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
             
             .card-header {
                 flex-direction: column;
@@ -414,14 +542,20 @@
             .card-icon {
                 margin: 0 auto 1rem;
             }
+            
+            .card-title {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1 class="header-title">Kaylan Hutchison</h1>
-            <h2 class="header-subtitle">Communications Portfolio</h2>
+            <div class="header-content">
+                <h1 class="header-title">KAYLAN HUTCHISON</h1>
+                <h2 class="header-subtitle">Communications Portfolio</h2>
+            </div>
         </div>
     </header>
     
@@ -441,7 +575,6 @@
             <h2 class="section-title">Writing Samples</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Army.mil front page" class="portfolio-img">
                     <div class="portfolio-content">
                         <h3 class="portfolio-title">Collaborative agreement propels Army analysis of artificial intelligence</h3>
                         <p class="portfolio-text">Front page of army.mil (May 13-17, 2022) - Army news line up top story</p>
@@ -453,7 +586,6 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Army injury assessment tool" class="portfolio-img">
                     <div class="portfolio-content">
                         <h3 class="portfolio-title">Army injury assessment tool receives stamp of accreditation</h3>
                         <p class="portfolio-text">Front page of army.mil (June 28-30, 2022)</p>
@@ -464,7 +596,6 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Army vulnerability analysis" class="portfolio-img">
                     <div class="portfolio-content">
                         <h3 class="portfolio-title">Army vulnerability, lethality analysis bolstered through high-performance computing</h3>
                         <p class="portfolio-text">Spurred media inquiry from The Economist (July 2022)</p>
@@ -476,7 +607,6 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300" alt="DCSA article" class="portfolio-img">
                     <div class="portfolio-content">
                         <h3 class="portfolio-title">Transforming Fiscal Year Closeout with Intelligent Automation</h3>
                         <p class="portfolio-text">DCSA announces conversion of Adjudication and Vetting Services to the Working Capital Fund</p>
@@ -487,7 +617,6 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Mushroom People Magazine" class="portfolio-img">
                     <div class="portfolio-content">
                         <h3 class="portfolio-title">Meet the Mushrooms</h3>
                         <p class="portfolio-text">Available in print in Mushroom People Magazine: Volume 2</p>
@@ -498,7 +627,6 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Poet Lore" class="portfolio-img">
                     <div class="portfolio-content">
                         <h3 class="portfolio-title">Everything I Dreamt Last Night Fit Into One Clean Voice Memo</h3>
                         <p class="portfolio-text">Poetry published in Poet Lore</p>
@@ -512,7 +640,7 @@
         </div>
     </section>
     
-    <section id="strategy" class="strategy-section">
+    <section id="strategy">
         <div class="container">
             <h2 class="section-title">Communications Strategy</h2>
             
@@ -524,9 +652,6 @@
                     <h3 class="card-title">U.S. Army Combat Capabilities Development Command</h3>
                 </div>
                 <p class="card-description">Led the development and execution of communications strategies using sustainable tools and tactics to amplify the impact of client missions and move audiences to action. Leveraging stakeholder interviews, qualitative analysis, messaging and brand audits, and data-driven assessment to iterate as needed.</p>
-                <div class="card-image">
-                    <img src="https://via.placeholder.com/700x350" alt="Army Communications Strategy">
-                </div>
             </div>
             
             <div class="strategy-card">
@@ -537,9 +662,6 @@
                     <h3 class="card-title">Defense Counterintelligence and Security Agency (DCSA)</h3>
                 </div>
                 <p class="card-description">Led the development and execution of communications strategies across ~12 initiatives, working with parallel technical workstreams to define vision and scope. Communications strategies encompass a range of materials– spanning articles, newsletters, briefings and briefing aids, slick sheets, leadership talking points, reference guides, SharePoint pages, email campaigns, and event planning packages.</p>
-                <div class="card-image">
-                    <img src="https://via.placeholder.com/700x350" alt="DCSA Communications Strategy">
-                </div>
             </div>
         </div>
     </section>
@@ -556,16 +678,10 @@
                     <h3 class="card-title">xTech Program Social Media</h3>
                 </div>
                 <p class="card-description">Developed brand voice and all text and visual components for three separate platforms (LinkedIn, Facebook, and X), planned and maintained content calendars, conducted metrics reporting</p>
-                
-                <div class="social-examples">
-                    <img src="https://via.placeholder.com/300x300" alt="xTech Social Media Example 1">
-                    <img src="https://via.placeholder.com/300x300" alt="xTech Social Media Example 2">
-                    <img src="https://via.placeholder.com/300x300" alt="xTech Social Media Example 3">
-                </div>
             </div>
             
             <div class="metrics-container">
-                <h3 class="metrics-title">Social Media Reporting - U.S. Army Combat Capabilities Development Command</h3>
+                <h3 class="metrics-title">Social Media Metrics</h3>
                 
                 <div class="metrics-grid">
                     <div class="metric-item">
@@ -594,13 +710,8 @@
                     </div>
                 </div>
                 
-                <div class="content-breakdown">
-                    <h4>Content Breakdown</h4>
-                    <img src="https://via.placeholder.com/600x400" alt="Content Breakdown Chart">
-                </div>
-                
                 <div class="goals-container">
-                    <h4>Q1 Goals</h4>
+                    <h4>Q1 Strategic Goals</h4>
                     <ul>
                         <li>Establish LinkedIn presence</li>
                         <li>Communicate mission, voice, and connection to Defense network</li>
@@ -615,7 +726,7 @@
     
     <section id="contact" class="contact-section">
         <div class="container">
-            <h2 class="section-title">Let's Connect!</h2>
+            <h2 class="section-title">Let's Connect</h2>
             <div class="contact-methods">
                 <div class="contact-method">
                     <div class="contact-icon">
