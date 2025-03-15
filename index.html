@@ -1,775 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaylan Hutchison - Communications Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #6e5773;
-            --secondary: #a786ab;
-            --accent: #e2b4bd;
-            --light: #fdfbff;
-            --dark: #333;
-            --transition: all 0.3s ease;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Cormorant Garamond', 'Playfair Display', serif;
-            line-height: 1.6; 
-            color: var(--dark);
-            background-color: var(--light);
-            letter-spacing: 0.4px;
-        }
-        
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-        
-        a {
-            text-decoration: none;
-            color: var(--primary);
-            transition: var(--transition);
-        }
-        
-        a:hover {
-            color: var(--accent);
-        }
-        
-        /* Header */
-        header {
-            background-color: var(--primary);
-            color: white;
-            padding: 3.5rem 0;
-            position: relative;
-        }
-        
-        .header-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-        }
-        
-        .header-title {
-            font-size: 3.2rem;
-            font-weight: 300;
-            letter-spacing: 8px;
-            margin-bottom: 0.8rem;
-            font-style: italic;
-        }
-        
-        .header-subtitle {
-            font-size: 1.1rem;
-            font-weight: 300;
-            opacity: 0.9;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-        
-        /* Navigation */
-        nav {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .nav-list {
-            display: flex;
-            list-style: none;
-            justify-content: center;
-        }
-        
-        .nav-link {
-            display: block;
-            padding: 1.2rem 2.5rem;
-            color: var(--primary);
-            font-weight: 400;
-            font-size: 0.8rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            position: relative;
-            transition: var(--transition);
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 2px;
-            background-color: var(--accent);
-            transition: width 0.3s;
-        }
-        
-        .nav-link:hover {
-            color: var(--primary);
-        }
-        
-        .nav-link:hover::after {
-            width: 40%;
-        }
-        
-        /* Sections */
-        section {
-            padding: 1.5rem 0;
-        }
-        
-        section:nth-child(even) {
-            background-color: white;
-        }
-        
-        .section-title {
-            font-size: 1.6rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-            color: var(--primary);
-            position: relative;
-            padding-bottom: 0.5rem;
-            font-weight: 300;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            font-style: italic;
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 30px;
-            height: 1px;
-            background-color: var(--accent);
-        }
-        
-        /* Portfolio Grid */
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-        }
-        
-        /* Updated portfolio item styles for clickable items */
-        .portfolio-grid a.portfolio-item {
-            display: block;
-            text-decoration: none;
-            color: inherit;
-            background-color: white;
-            border-radius: 0;
-            overflow: hidden;
-            box-shadow: none;
-            transition: var(--transition);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-            margin-bottom: 1rem;
-            padding-bottom: 1rem;
-        }
-        
-        .portfolio-grid a.portfolio-item:hover {
-            transform: translateX(5px);
-            border-color: var(--accent);
-        }
-        
-        .portfolio-content {
-            padding: 1.2rem;
-        }
-        
-        .portfolio-title {
-            font-size: 1.3rem;
-            margin-bottom: 0.4rem;
-            color: var(--primary);
-            font-weight: 400;
-            line-height: 1.3;
-            font-style: italic;
-        }
-        
-        .portfolio-text {
-            color: #777;
-            margin-bottom: 0.8rem;
-            font-size: 0.9rem;
-            line-height: 1.6;
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        .portfolio-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.6rem;
-        }
-        
-        .portfolio-tag {
-            background-color: transparent;
-            color: var(--primary);
-            padding: 0.3rem 0;
-            margin-right: 1rem;
-            font-size: 0.7rem;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-family: 'Montserrat', sans-serif;
-            position: relative;
-            pointer-events: none;
-        }
-        
-        /* Strategy Section */
-        .strategy-card {
-            background-color: white;
-            padding: 1.8rem 1.5rem;
-            border-radius: 0;
-            box-shadow: none;
-            margin-bottom: 1rem;
-            transition: var(--transition);
-            border-left: 1px solid var(--primary);
-            position: relative;
-        }
-        
-        .strategy-card:after {
-            content: '';
-            position: absolute;
-            left: -1px;
-            top: 0;
-            width: 1px;
-            height: 0;
-            background-color: var(--accent);
-            transition: height 0.4s ease;
-        }
-        
-        .strategy-card:hover:after {
-            height: 100%;
-        }
-        
-        .card-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        
-        .card-icon {
-            color: var(--accent);
-            width: auto;
-            height: auto;
-            display: inline-block;
-            margin-right: 1rem;
-            font-size: 1.5rem;
-            background-color: transparent;
-            border: none;
-            box-shadow: none;
-        }
-        
-        .card-title {
-            color: var(--primary);
-            font-size: 1.3rem;
-            font-weight: 400;
-        }
-        
-        .card-description {
-            color: #777;
-            line-height: 1.6;
-            font-size: 0.95rem;
-        }
-        
-        /* Social Media Section */
-        .social-media-section {
-            background-color: #50425f;
-            color: white;
-        }
-        
-        .social-media-section .section-title {
-            color: white;
-            margin-bottom: 2rem;
-        }
-        
-        .social-media-section .section-title::after {
-            background-color: rgba(255, 255, 255, 0.7);
-            height: 1px;
-            width: 50px;
-        }
-        
-        .social-card {
-            background-color: rgba(255, 255, 255, 0.15);
-            padding: 1.8rem 1.5rem;
-            border-radius: 0;
-            margin-bottom: 1rem;
-            transition: var(--transition);
-        }
-        
-        .social-card .card-icon {
-            color: rgba(255, 255, 255, 0.9);
-        }
-        
-        .social-card .card-title {
-            color: white;
-            font-weight: 500;
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-            display: block;
-        }
-        
-        .social-card .card-description {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-        
-        .metrics-container {
-            background-color: white;
-            padding: 1.5rem;
-            border-radius: 0;
-            margin-top: 1rem;
-            box-shadow: none;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .metrics-title {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary);
-            text-align: center;
-            font-weight: 400;
-        }
-        
-        .metrics-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 0.8rem;
-            margin-bottom: 1rem;
-        }
-        
-        .metric-item {
-            text-align: center;
-            padding: 1rem 0.5rem;
-            background-color: transparent;
-            transition: var(--transition);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-        }
-        
-        .metric-item:hover .metric-value {
-            color: var(--accent);
-        }
-        
-        .metric-value {
-            font-size: 2.2rem;
-            font-weight: 300;
-            color: var(--primary);
-            margin-bottom: 0.2rem;
-        }
-        
-        .metric-label {
-            color: #777;
-            font-weight: 400;
-            font-size: 0.85rem;
-            letter-spacing: 0.5px;
-        }
-        
-        .goals-container {
-            margin-top: 1rem;
-            background-color: transparent;
-            list-style: none; 
-            padding: 0.8rem 1.2rem;
-            border-radius: 0;
-            border-left: 1px solid var(--accent);
-        }
-        
-        .goals-container h4 {
-            font-size: 1rem;
-            margin-bottom: 0.8rem;
-            color: var(--primary);
-            font-weight: 400;
-        }
-        
-        .goals-container ul {
-            list-style-type: none;
-            padding-left: 0.3rem;
-            column-count: 2;
-            column-gap: 2rem;
-        }
-        
-        .goals-container li {
-            margin-bottom: 0.5rem;
-            position: relative;
-            padding-left: 1.5rem;
-            color: #666;
-            font-size: 0.95rem;
-            display: flex;
-            align-items: flex-start;
-            break-inside: avoid;
-        }
-        
-        .goals-container li:before {
-            content: "•";
-            color: var(--accent);
-            position: absolute;
-            left: 0; /* Bullet at the very left of the li */
-            top: 0; /* Align bullet to the top of the li */
-            font-weight: bold;
-            font-size: 1.2rem;
-            flex-shrink: 0; /* Prevent bullet from shrinking */
-            line-height: 1.2rem; /* Match line-height to font-size for vertical alignment */
-        }
-
-        
-        /* Contact Section */
-        .contact-methods {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-        
-        .contact-method {
-            background-color: white;
-            padding: 1.5rem 1rem;
-            border-radius: 0;
-            box-shadow: none;
-            text-align: center;
-            flex: 1;
-            min-width: 160px;
-            max-width: 200px;
-            transition: var(--transition);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-            position: relative;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-        
-        .contact-method:after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: -1px;
-            width: 0;
-            height: 1px;
-            background-color: var(--accent);
-            transform: translateX(-50%);
-            transition: width 0.3s ease;
-        }
-        
-        .contact-method:hover:after {
-            width: 80%;
-        }
-        
-        .contact-icon {
-            font-size: 2rem;
-            color: var(--accent);
-            margin-bottom: 1rem;
-            opacity: 1;
-        }
-        
-        .contact-title {
-            font-size: 1.1rem;
-            margin-bottom: 0.3rem;
-            color: var(--primary);
-            font-weight: 400;
-        }
-        
-        .contact-info {
-            color: #777;
-            font-size: 0.95rem;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--primary);
-            color: white;
-            text-align: center;
-            padding: 1.5rem 0;
-        }
-        
-        .footer-text {
-            opacity: 0.8;
-            font-size: 0.85rem;
-            letter-spacing: 0.5px;
-        }
-        
-        /* Media Queries */
-        @media (max-width: 768px) {
-            .header-title {
-                font-size: 2rem;
-            }
-            
-            .header-subtitle {
-                font-size: 0.9rem;
-            }
-            
-            .nav-link {
-                padding: 0.8rem 1rem;
-            }
-            
-            .portfolio-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .metrics-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            
-            .goals-container ul {
-                column-count: 1;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .section-title {
-                font-size: 1.3rem;
-            }
-            
-            .nav-list {
-                width: 100%;
-                justify-content: space-between;
-            }
-            
-            .nav-link {
-                padding: 0.6rem 0.5rem;
-                font-size: 0.7rem;
-            }
-            
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .metrics-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .card-header {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .card-icon {
-                margin: 0 auto 0.6rem;
-            }
-            
-            .card-title {
-                font-size: 1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarah Mitchell - Writing Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1 class="header-title">KAYLAN HUTCHISON</h1>
-                <h2 class="header-subtitle">Communications Portfolio</h2>
-            </div>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Sarah Mitchell</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Work</a>
+        <a href="bio.html" class="nav-link">Bio</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="grid">
+      <a href="#" class="grid-item">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Editorial Project">
+          <div class="project-info">
+            <p class="project-category">Editorial</p>
+            <h3 class="project-title">Editorial Project</h3>
+          </div>
         </div>
-    </header>
-    
-    <nav>
-        <div class="container">
-            <ul class="nav-list">
-                <li><a href="#writing" class="nav-link">Writing</a></li>
-                <li><a href="#strategy" class="nav-link">Strategy</a></li>
-                <li><a href="#social-media" class="nav-link">Social Media</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+      </a>
+      <a href="#" class="grid-item">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606" alt="Feature Article">
+          <div class="project-info">
+            <p class="project-category">Journalism</p>
+            <h3 class="project-title">Feature Article</h3>
+          </div>
         </div>
-    </nav>
-    
-    <section id="writing">
-        <div class="container">
-            <h2 class="section-title">Writing Samples</h2>
-            <div class="portfolio-grid">
-                <a href="https://www.army.mil/article/257531" class="portfolio-item">
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Collaborative agreement propels Army analysis of artificial intelligence</h3>
-                        <p class="portfolio-text">Front page of army.mil (May 13-17, 2022) - Army news line up top story</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">Army News</span>
-                            <span class="portfolio-tag">Technology</span>
-                            <span class="portfolio-tag">AI</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://www.army.mil/article/255192" class="portfolio-item">
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Army injury assessment tool receives stamp of accreditation</h3>
-                        <p class="portfolio-text">Front page of army.mil (June 28-30, 2022)</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">Army News</span>
-                            <span class="portfolio-tag">Health</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://www.army.mil/article/252336" class="portfolio-item">
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Army vulnerability, lethality analysis bolstered through high-performance computing</h3>
-                        <p class="portfolio-text">Spurred media inquiry from The Economist (July 2022)</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">Army News</span>
-                            <span class="portfolio-tag">Technology</span>
-                            <span class="portfolio-tag">Defense</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://google.com" class="portfolio-item">
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Transforming Fiscal Year Closeout with Intelligent Automation</h3>
-                        <p class="portfolio-text">DCSA announces conversion of Adjudication and Vetting Services to the Working Capital Fund</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">Finance</span>
-                            <span class="portfolio-tag">Automation</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://google.com" class="portfolio-item">
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Meet the Mushrooms</h3>
-                        <p class="portfolio-text">Available in print in Mushroom People Magazine: Volume 2</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">Creative Writing</span>
-                            <span class="portfolio-tag">Magazine</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://google.com" class="portfolio-item">
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Everything I Dreamt Last Night Fit Into One Clean Voice Memo</h3>
-                        <p class="portfolio-text">Poetry published in Poet Lore</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">Creative Writing</span>
-                            <span class="portfolio-tag">Poetry</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
+      </a>
+      <a href="#" class="grid-item">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1463288889049-e0f9f4da2bde" alt="Blog Series">
+          <div class="project-info">
+            <p class="project-category">Blog</p>
+            <h3 class="project-title">Blog Series</h3>
+          </div>
         </div>
-    </section>
-    
-    <section id="strategy">
-        <div class="container">
-            <h2 class="section-title">Communications Strategy</h2>
-            
-            <div class="strategy-card">
-                <div class="card-header">
-                    <div class="card-icon">
-                        <i class="far fa-handshake"></i>
-                    </div>
-                    <h3 class="card-title">U.S. Army Combat Capabilities Development Command</h3>
-                </div>
-                <p class="card-description">Led the development and execution of communications strategies using sustainable tools and tactics to amplify the impact of client missions and move audiences to action. Leveraging stakeholder interviews, qualitative analysis, messaging and brand audits, and data-driven assessment to iterate as needed.</p>
-            </div>
-            
-            <div class="strategy-card">
-                <div class="card-header">
-                    <div class="card-icon">
-                        <i class="far fa-chart-bar"></i>
-                    </div>
-                    <h3 class="card-title">Defense Counterintelligence and Security Agency (DCSA)</h3>
-                </div>
-                <p class="card-description">Led the development and execution of communications strategies across ~12 initiatives, working with parallel technical workstreams to define vision and scope. Communications strategies encompass a range of materials– spanning articles, newsletters, briefings and briefing aids, slick sheets, leadership talking points, reference guides, SharePoint pages, email campaigns, and event planning packages.</p>
-            </div>
+      </a>
+      <a href="#" class="grid-item">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea" alt="Technical Writing">
+          <div class="project-info">
+            <p class="project-category">Technical</p>
+            <h3 class="project-title">Technical Writing</h3>
+          </div>
         </div>
-    </section>
-    
-    <section id="social-media" class="social-media-section">
-        <div class="container">
-            <h2 class="section-title">Social Media Management</h2>
-            
-            <div class="social-card">
-                <div class="card-header">
-                    <div class="card-icon">
-                        <i class="far fa-comment-dots"></i>
-                    </div>
-                    <h3 class="card-title">xTech Program Social Media</h3>
-                </div>
-                <p class="card-description">Developed brand voice and all text and visual components for three separate platforms (LinkedIn, Facebook, and X). Planned and maintained content calendars, conducted metrics reporting, and optimized engagement strategy.</p>
-            </div>
-            
-            <div class="metrics-container">
-                <h3 class="metrics-title">Social Media Metrics</h3>
-                
-                <div class="metrics-grid">
-                    <div class="metric-item">
-                        <div class="metric-value">148</div>
-                        <div class="metric-label">Followers</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-value">168</div>
-                        <div class="metric-label">Visitors</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-value">447</div>
-                        <div class="metric-label">Page Views</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-value">38</div>
-                        <div class="metric-label">Posts</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-value">5,937</div>
-                        <div class="metric-label">Post Views</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-value">169</div>
-                        <div class="metric-label">Engagements</div>
-                    </div>
-                </div>
-                
-                <div class="goals-container">
-                    <h4>Q1 Strategic Goals</h4>
-                    <ul>
-                        <li>Establish LinkedIn presence</li>
-                        <li>Communicate mission, voice, and connection to Defense network</li>
-                        <li>Celebrate workforce; begin sharing success stories and spotlights</li>
-                        <li>Drive legitimacy of analytic capabilities and impacts</li>
-                        <li>Set baseline to establish attainable Q2 growth goals</li>
-                    </ul>
-                </div>
-            </div>
+      </a>
+      <a href="#" class="grid-item">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4" alt="Copywriting">
+          <div class="project-info">
+            <p class="project-category">Copy</p>
+            <h3 class="project-title">Copywriting</h3>
+          </div>
         </div>
-    </section>
-    
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-methods">
-                <div class="contact-method">
-                    <div class="contact-icon">
-                        <i class="far fa-smile"></i>
-                    </div>
-                    <h3 class="contact-title">Call Me</h3>
-                    <p class="contact-info">301-357-0461</p>
-                </div>
-                <a href="mailto:kaylan.hutchison@gmail.com" class="contact-method">
-                    <div class="contact-icon">
-                        <i class="far fa-envelope"></i>
-                    </div>
-                    <h3 class="contact-title">Email</h3>
-                    <p class="contact-info">kaylan.hutchison@gmail.com</p>
-                </a>
-                <a href="https://www.linkedin.com/in/kaylan-hutchison/" class="contact-method" target="_blank">
-                    <div class="contact-icon">
-                        <i class="far fa-handshake"></i>
-                    </div>
-                    <h3 class="contact-title">LinkedIn</h3>
-                    <p class="contact-info">Find me on LinkedIn</p>
-                </a>
-            </div>
+      </a>
+      <a href="#" class="grid-item">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1516156008625-3a9d6067fab5" alt="Content Strategy">
+          <div class="project-info">
+            <p class="project-category">Strategy</p>
+            <h3 class="project-title">Content Strategy</h3>
+          </div>
         </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <p class="footer-text">© 2025 Kaylan Hutchison. All Rights Reserved.</p>
-        </div>
-    </footer>
+      </a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <a href="https://linkedin.com" class="footer-link">LinkedIn</a>
+      <a href="mailto:contact@example.com" class="footer-link">Email</a>
+    </div>
+  </footer>
 </body>
 </html>
