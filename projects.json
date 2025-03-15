@@ -2,23 +2,75 @@
     "projects": [
       {
         "id": "1",
-        "title": "Content Strategy for Tech Startups",
-        "image": "/images/project1.jpg",
+        "title": "Editorial Project",
+        "category": "Editorial",
+        "gridImage": "https://images.unsplash.com/photo-1519681393784-d120267933ba",
+        "image": "/images/project1-detail.jpg",
         "link": "https://example.com/project1",
         "linkText": "View Project Details",
         "date": "March 2025",
-        "summaryItalic": "A comprehensive content strategy developed for an emerging tech startup, focusing on audience engagement, brand consistency, and conversion optimization across digital platforms.",
-        "summaryNormal": "<p>This project involved creating a tailored content strategy that aligned with the client's business objectives while addressing their unique market challenges. Working closely with their marketing team, I developed a framework that integrated SEO best practices, user-centered design principles, and compelling storytelling techniques.</p><p>The strategy included content calendars, style guides, and performance metrics that allowed for consistent measurement and optimization. The implementation resulted in a 45% increase in user engagement and significantly improved conversion rates across their digital properties.</p>"
+        "summaryItalic": "An in-depth editorial project examining emerging trends in technology and their impact on society across multiple generations.",
+        "summaryNormal": "<p>This comprehensive editorial series delved into how technological advances are reshaping our social, economic, and cultural landscapes. The project required extensive research, expert interviews, and thoughtful analysis to present balanced perspectives on complex topics.</p><p>The final piece was featured prominently and generated significant reader engagement, with particular emphasis on the cross-generational impacts of technological adoption.</p>"
       },
       {
         "id": "2",
-        "title": "UX Writing for Financial App",
-        "image": "/images/project2.jpg",
+        "title": "Feature Article",
+        "category": "Journalism",
+        "gridImage": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606",
+        "image": "/images/project2-detail.jpg",
         "link": "https://example.com/project2",
-        "linkText": "See Case Study",
+        "linkText": "Read Full Article",
         "date": "February 2025",
-        "summaryItalic": "Redesigned the user experience copy for a financial application to improve clarity, reduce support tickets, and increase user engagement and retention.",
-        "summaryNormal": "<p>For this project, I collaborated with the product and design teams to reimagine the microcopy throughout the application, focusing on making complex financial concepts accessible to all users.</p><p>The project included auditing existing content, creating a comprehensive UX writing style guide, and redesigning error messages, onboarding flows, and feature descriptions. Following implementation, user understanding improved by 37%, and support tickets decreased by 25%.</p>"
+        "summaryItalic": "An investigative feature that explored the intersection of public policy and environmental conservation efforts in urban communities.",
+        "summaryNormal": "<p>This investigative feature examined how policy decisions impact community-led environmental initiatives. Through on-the-ground reporting and data analysis, the article illuminated both challenges and successes in urban conservation efforts.</p><p>The piece included compelling personal narratives alongside rigorous policy examination, providing readers with both emotional connection and substantive understanding of complex issues.</p>"
+      },
+      {
+        "id": "3",
+        "title": "Blog Series",
+        "category": "Blog",
+        "gridImage": "https://images.unsplash.com/photo-1463288889049-e0f9f4da2bde",
+        "image": "/images/project3-detail.jpg",
+        "link": "https://example.com/project3",
+        "linkText": "Explore Series",
+        "date": "January 2025",
+        "summaryItalic": "A six-part blog series on professional development strategies for creative professionals navigating evolving industry landscapes.",
+        "summaryNormal": "<p>This comprehensive blog series provided practical guidance for creative professionals seeking to advance their careers. Each installment focused on specific strategies, from portfolio development to networking in digital spaces.</p><p>The series incorporated insights from industry leaders and practical exercises, resulting in highly actionable content. Reader response was exceptionally positive, with many implementing the suggested approaches.</p>"
+      },
+      {
+        "id": "4",
+        "title": "Technical Writing",
+        "category": "Technical",
+        "gridImage": "https://images.unsplash.com/photo-1516116216624-53e697fedbea",
+        "image": "/images/project4-detail.jpg",
+        "link": "https://example.com/project4",
+        "linkText": "View Documentation",
+        "date": "December 2024",
+        "summaryItalic": "Technical documentation and user guides for a complex enterprise software solution, focused on clarity and accessibility.",
+        "summaryNormal": "<p>This technical writing project involved creating comprehensive documentation for a sophisticated software platform. The challenge was to present complex technical concepts in accessible language without sacrificing accuracy or depth.</p><p>The documentation included user guides, API documentation, and troubleshooting resources. The final product significantly reduced support tickets and improved user adoption rates.</p>"
+      },
+      {
+        "id": "5",
+        "title": "Copywriting Campaign",
+        "category": "Copy",
+        "gridImage": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+        "image": "/images/project5-detail.jpg",
+        "link": "https://example.com/project5",
+        "linkText": "See Campaign Results",
+        "date": "November 2024",
+        "summaryItalic": "A multi-channel copywriting campaign for a product launch that drove exceptional engagement and conversion rates.",
+        "summaryNormal": "<p>This comprehensive copywriting project supported a major product launch across email, social media, landing pages, and print materials. The copy needed to maintain consistent brand voice while adapting to different formats and audience segments.</p><p>The campaign achieved a 32% higher conversion rate than industry benchmarks and established a foundation for ongoing marketing initiatives.</p>"
+      },
+      {
+        "id": "6",
+        "title": "Content Strategy",
+        "category": "Strategy",
+        "gridImage": "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5",
+        "image": "/images/project6-detail.jpg",
+        "link": "https://example.com/project6",
+        "linkText": "View Strategy Overview",
+        "date": "October 2024",
+        "summaryItalic": "A comprehensive content strategy that aligned business objectives with audience needs across multiple digital platforms.",
+        "summaryNormal": "<p>This strategic initiative involved developing a cohesive content approach for a company undergoing significant brand evolution. The process included audience research, competitive analysis, and channel optimization.</p><p>The resulting strategy document provided clear guidance for content creation, distribution, and measurement, enabling the client to efficiently scale their content operations while maintaining quality and consistency.</p>"
       }
     ]
   }

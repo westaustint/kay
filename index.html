@@ -1,87 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaylan Hutchison - Writing Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaylan Hutchison - Writing Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script>
+  // Function to load all projects and generate the grid
+  function loadProjects() {
+    fetch('projects.json')
+      .then(response => response.json())
+      .then(data => {
+        const projectGrid = document.getElementById('project-grid');
+        
+        // Loop through projects and create grid items
+        data.projects.forEach(project => {
+          // Create project card HTML
+          const projectHTML = `
+            <a href="project.html?id=${project.id}" class="grid-item">
+              <div class="project-card">
+                <img src="${project.gridImage || project.image}" alt="${project.title}">
+                <div class="project-info">
+                  <p class="project-category">${project.category}</p>
+                  <h3 class="project-title">${project.title}</h3>
+                </div>
+              </div>
+            </a>
+          `;
+          
+          // Add to the grid
+          projectGrid.innerHTML += projectHTML;
+        });
+      })
+      .catch(error => console.error('Error loading project data:', error));
+  }
+  
+  // Load projects when the page loads
+  window.addEventListener('DOMContentLoaded', loadProjects);
+</script>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">Kaylan Hutchison</a>
-      <div class="nav-links">
-        <a href="index.html" class="nav-link">Work</a>
-        <a href="bio.html" class="nav-link">Bio</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <main class="container">
-    <div class="grid">
-      <a href="Page1.html" class="grid-item">
-        <div class="project-card">
-          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Editorial Project">
-          <div class="project-info">
-            <p class="project-category">Editorial</p>
-            <h3 class="project-title">Editorial Project</h3>
-          </div>
-        </div>
-      </a>
-      <a href="project.html?id=1" class="grid-item">
-        <div class="project-card">
-          <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606" alt="Feature Article">
-          <div class="project-info">
-            <p class="project-category">Journalism</p>
-            <h3 class="project-title">Feature Article</h3>
-          </div>
-        </div>
-      </a>
-      <a href="project.html?id=2" class="grid-item">
-        <div class="project-card">
-          <img src="https://images.unsplash.com/photo-1463288889049-e0f9f4da2bde" alt="Blog Series">
-          <div class="project-info">
-            <p class="project-category">Blog</p>
-            <h3 class="project-title">Blog Series</h3>
-          </div>
-        </div>
-      </a>
-      <a href="Page1.html" class="grid-item">
-        <div class="project-card">
-          <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea" alt="Technical Writing">
-          <div class="project-info">
-            <p class="project-category">Technical</p>
-            <h3 class="project-title">Technical Writing</h3>
-          </div>
-        </div>
-      </a>
-      <a href="Page1.html" class="grid-item">
-        <div class="project-card">
-          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4" alt="Copywriting">
-          <div class="project-info">
-            <p class="project-category">Copy</p>
-            <h3 class="project-title">Copywriting</h3>
-          </div>
-        </div>
-      </a>
-      <a href="Page1.html" class="grid-item">
-        <div class="project-card">
-          <img src="https://images.unsplash.com/photo-1516156008625-3a9d6067fab5" alt="Content Strategy">
-          <div class="project-info">
-            <p class="project-category">Strategy</p>
-            <h3 class="project-title">Content Strategy</h3>
-          </div>
-        </div>
-      </a>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-container">
-      <a href="https://linkedin.com" class="footer-link">LinkedIn</a>
-      <a href="mailto:contact@example.com" class="footer-link">Email</a>
-    </div>
-  </footer>
+<nav class="navbar">
+<div class="nav-container">
+<a href="index.html" class="nav-logo">Kaylan Hutchison</a>
+<div class="nav-links">
+<a href="index.html" class="nav-link">Work</a>
+<a href="bio.html" class="nav-link">Bio</a>
+<a href="contact.html" class="nav-link">Contact</a>
+</div>
+</div>
+</nav>
+<main class="container">
+  <div id="project-grid" class="grid">
+    <!-- Project cards will be dynamically inserted here -->
+  </div>
+</main>
+<footer class="footer">
+<div class="footer-container">
+<a href="https://linkedin.com" class="footer-link">LinkedIn</a>
+<a href="mailto:contact@example.com" class="footer-link">Email</a>
+</div>
+</footer>
 </body>
 </html>
