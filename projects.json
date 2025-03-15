@@ -1,0 +1,24 @@
+{
+    "projects": [
+      {
+        "id": "1",
+        "title": "Content Strategy for Tech Startups",
+        "image": "/images/project1.jpg",
+        "link": "https://example.com/project1",
+        "linkText": "View Project Details",
+        "date": "March 2025",
+        "summaryItalic": "A comprehensive content strategy developed for an emerging tech startup, focusing on audience engagement, brand consistency, and conversion optimization across digital platforms.",
+        "summaryNormal": "<p>This project involved creating a tailored content strategy that aligned with the client's business objectives while addressing their unique market challenges. Working closely with their marketing team, I developed a framework that integrated SEO best practices, user-centered design principles, and compelling storytelling techniques.</p><p>The strategy included content calendars, style guides, and performance metrics that allowed for consistent measurement and optimization. The implementation resulted in a 45% increase in user engagement and significantly improved conversion rates across their digital properties.</p>"
+      },
+      {
+        "id": "2",
+        "title": "UX Writing for Financial App",
+        "image": "/images/project2.jpg",
+        "link": "https://example.com/project2",
+        "linkText": "See Case Study",
+        "date": "February 2025",
+        "summaryItalic": "Redesigned the user experience copy for a financial application to improve clarity, reduce support tickets, and increase user engagement and retention.",
+        "summaryNormal": "<p>For this project, I collaborated with the product and design teams to reimagine the microcopy throughout the application, focusing on making complex financial concepts accessible to all users.</p><p>The project included auditing existing content, creating a comprehensive UX writing style guide, and redesigning error messages, onboarding flows, and feature descriptions. Following implementation, user understanding improved by 37%, and support tickets decreased by 25%.</p>"
+      }
+    ]
+  }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">Project - Sarah Mitchell</title>
+<link rel="stylesheet" href="style.css">
+<script>
+  // Function to load project content
+  function loadProjectContent() {
+    // Get the project ID from URL parameter (e.g., project.html?id=1)
+    const urlParams = new URLSearchParams(window.location.search);
+    const projectId = urlParams.get('id') || '1'; // Default to project 1
+    
+    // Fetch the project data from a JSON file
+    fetch('projects.json')
+      .then(response => response.json())
+      .then(data => {
+        const project = data.projects.find(p => p.id === projectId);
+        if (project) {
+          // Update the page title
+          document.title = `${project.title} - Sarah Mitchell`;
+          document.getElementById('page-title').textContent = project.title;
+          
+          // Update content
+          document.getElementById('project-image').src = project.image || "/api/placeholder/300/300";
+          document.getElementById('project-image').alt = project.title;
+          document.getElementById('project-title').textContent = project.title;
+          document.getElementById('project-link').href = project.link;
+          document.getElementById('project-link').textContent = project.linkText;
+          document.getElementById('project-date').textContent = project.date;
+          document.getElementById('project-summary-italic').textContent = project.summaryItalic;
+          document.getElementById('project-summary-normal').innerHTML = project.summaryNormal;
+        }
+      })
+      .catch(error => console.error('Error loading project data:', error));
+  }
+  
+  // Load content when the page loads
+  window.addEventListener('DOMContentLoaded', loadProjectContent);
+</script>
+</head>
+<body>
+<nav class="navbar">
+<div class="nav-container">
+<a href="index.html" class="nav-logo">Sarah Mitchell</a>
+<div class="nav-links">
+<a href="index.html" class="nav-link">Work</a>
+<a href="bio.html" class="nav-link">Bio</a>
+<a href="contact.html" class="nav-link">Contact</a>
+</div>
+</div>
+</nav>
+<main class="container">
+<div class="project-container">
+    <img id="project-image" src="/api/placeholder/300/300" alt="Project Image" class="project-image">
+    
+    <div class="project-content">
+        <h1 id="project-title" class="project-title">Loading Project...</h1>
+        
+        <div class="project-meta">
+            <a id="project-link" href="#">View Project Details</a> | <span id="project-date">Date</span>
+        </div>
+        
+        <div id="project-summary-italic" class="project-summary-italic">
+            Loading project summary...
+        </div>
+        
+        <div id="project-summary-normal" class="project-summary-normal">
+            Loading project content...
+        </div>
+    </div>
+</div>
+</main>
+<footer class="footer">
+<div class="footer-container">
+<a href="https://linkedin.com" class="footer-link">LinkedIn</a>
+<a href="mailto:contact@example.com" class="footer-link">Email</a>
+</div>
+</footer>
+</body>
+</html>
