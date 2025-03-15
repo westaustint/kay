@@ -8,7 +8,6 @@
 <script>
   // Function to load project content
   function loadProjectContent() {
-    // Get the project ID from URL parameter (e.g., project.html?id=1)
     const urlParams = new URLSearchParams(window.location.search);
     const projectId = urlParams.get('id') || '1'; // Default to project 1
     
@@ -43,11 +42,11 @@
 <body>
 <nav class="navbar">
 <div class="nav-container">
-<a href="index.html" class="nav-logo">Sarah Mitchell</a>
+<a href="index" class="nav-logo">Sarah Mitchell</a>
 <div class="nav-links">
-<a href="index.html" class="nav-link">Work</a>
-<a href="bio.html" class="nav-link">Bio</a>
-<a href="contact.html" class="nav-link">Contact</a>
+<a href="index" class="nav-link">Work</a>
+<a href="bio" class="nav-link">Bio</a>
+<a href="contact" class="nav-link">Contact</a>
 </div>
 </div>
 </nav>

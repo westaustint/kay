@@ -17,7 +17,7 @@
         data.projects.forEach(project => {
           // Create project card HTML
           const projectHTML = `
-            <a href="project.html?id=${project.id}" class="grid-item">
+            <a href="project?id=${project.id}" class="grid-item">
               <div class="project-card">
                 <img src="${project.gridImage || project.image}" alt="${project.title}">
                 <div class="project-info">
@@ -42,11 +42,11 @@
 <body>
 <nav class="navbar">
 <div class="nav-container">
-<a href="index.html" class="nav-logo">Kaylan Hutchison</a>
+<a href="index" class="nav-logo">Kaylan Hutchison</a>
 <div class="nav-links">
-<a href="index.html" class="nav-link">Work</a>
-<a href="bio.html" class="nav-link">Bio</a>
-<a href="contact.html" class="nav-link">Contact</a>
+<a href="index" class="nav-link">Work</a>
+<a href="bio" class="nav-link">Bio</a>
+<a href="contact" class="nav-link">Contact</a>
 </div>
 </div>
 </nav>
