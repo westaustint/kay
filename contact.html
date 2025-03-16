@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Kaylan Hutchison</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Kaylan Hutchison</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="./" class="nav-logo">Kaylan Hutchison</a>
-      <div class="nav-links">
-        <a href="./" class="nav-link">Work</a>
-        <a href="bio" class="nav-link">Bio</a>
-        <a href="contact" class="nav-link">Contact</a>
-      </div>
-    </div>
-  </nav>
+<nav class="navbar">
+<div class="nav-container">
+<a href="./" class="nav-logo">Kaylan Hutchison</a>
+<div class="nav-links">
+<a href="./" class="nav-link">Work</a>
+<a href="bio" class="nav-link">Bio</a>
+<a href="contact" class="nav-link">Contact</a>
+</div>
+</div>
+</nav>
+<main class="container">
+<div class="contact-container">
+<h1 class="contact-title">Let's Connect</h1>
+<p class="contact-subtitle">
+ I'm always open to discussing new projects, creative ideas, or opportunities
+ to be part of your visions.
+</p>
+<div class="contact-grid">
+<div class="contact-card">
+<h2 class="card-title">Email Me</h2>
+<p class="card-text">For work inquiries or collaborations</p>
+<a href="mailto:kaylan.hutchison@gmail.com" class="card-link">
+ kaylan.hutchison@gmail.com
+<span class="arrow">→</span>
+</a>
+</div>
+<div class="contact-card">
+<h2 class="card-title">Connect on LinkedIn</h2>
+<p class="card-text">Let's grow our professional network</p>
+<a href="https://www.linkedin.com/in/kaylan-hutchison/" id="linkedin-link" class="card-link">
+ View Profile
+<span class="arrow">→</span>
+</a>
+</div>
+</div>
+</div>
+</main>
 
-  <main class="container">
-    <div class="contact-container">
-      <h1 class="contact-title">Let's Connect</h1>
-      <p class="contact-subtitle">
-        I'm always open to discussing new projects, creative ideas, or opportunities
-        to be part of your visions.
-      </p>
-
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h2 class="card-title">Email Me</h2>
-          <p class="card-text">For work inquiries or collaborations</p>
-          <a href="mailto:kaylan.hutchison@gmail.com" class="card-link">
-            kaylan.hutchison@gmail.com
-            <span class="arrow">→</span>
-          </a>
-        </div>
-
-        <div class="contact-card">
-          <h2 class="card-title">Connect on LinkedIn</h2>
-          <p class="card-text">Let's grow our professional network</p>
-          <a href="linkedin://in/kaylan-hutchison" onclick="setTimeout(function(){window.location='https://www.linkedin.com/in/kaylan-hutchison';}, 500);" target="_blank" rel="noopener noreferrer" class="card-link">
-            View Profile
-            <span class="arrow">→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </main>
+<script>
+  // Check if the user is on a mobile device
+  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+    document.getElementById('linkedin-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Try to open the LinkedIn app
+      window.location.href = 'linkedin://profile/in/kaylan-hutchison';
+      
+      // Redirect to web version after a delay if app doesn't open
+      setTimeout(function() {
+        window.location.href = 'https://www.linkedin.com/in/kaylan-hutchison/';
+      }, 2000);
+    });
+  }
+</script>
 </body>
 </html>
