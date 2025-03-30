@@ -28,7 +28,7 @@
           document.getElementById('project-link').href = project.link;
           document.getElementById('project-link').textContent = project.linkText;
           document.getElementById('project-date').textContent = project.date;
-          document.getElementById('project-summary-italic').textContent = project.summaryItalic;
+          document.getElementById('project-summary-italic').innerHTML = project.summaryItalic;
           document.getElementById('project-summary-normal').innerHTML = project.summaryNormal;
         }
       })

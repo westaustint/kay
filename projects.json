@@ -5,11 +5,11 @@
         "title": "MEET THE SLIME MOLDS",
         "category": "Biological. Computational.",
         "gridImage": "photos/SlimeMold.jpeg",
-        "image": "photos/SlimeMoldPDF.png",
-        "link": "Read the article here",
-        "linkText": "docs/Meet the Slime Molds.pdf",
+        "image": "photos/SlimeMoldPdf.png",
+        "link": "docs/Meet the Slime Molds.pdf",
+        "linkText": "Read the article here",
         "date": "November 2024",
-        "summaryItalic": "Mycophiles have the luxury of naming convention confidences— think of the fall-off-the-bone tenderness of chanterelles, the adorable syllabic chassis of enoki. Even the psilocybin club has regal gravitas: Liberty caps. Golden teachers. \n\n Now compare that to slime mold's most popular nickname: dog vomit. Often overlooked and rejected, slime mold's poetry is that of an underdog— odd, blobby, and generally damp.",
+        "summaryItalic": "Mycophiles have the luxury of naming convention confidences— think of the fall-off-the-bone tenderness of chanterelles, the adorable syllabic chassis of enoki. Even the psilocybin club has regal gravitas: Liberty caps. Golden teachers. <br> Now compare that to slime mold's most popular nickname: dog vomit. Often overlooked and rejected, slime mold's poetry is that of an underdog— odd, blobby, and generally damp.",
         "summaryNormal": ""
       }
     ]
