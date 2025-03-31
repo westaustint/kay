@@ -11,6 +11,113 @@
         "date": "November 2024",
         "summaryItalic": "Mycophiles have the luxury of naming convention confidences— think of the fall-off-the-bone tenderness of chanterelles, the adorable syllabic chassis of enoki. Even the psilocybin club has regal gravitas: Liberty caps. Golden teachers. <br> Now compare that to slime mold's most popular nickname: dog vomit. Often overlooked and rejected, slime mold's poetry is that of an underdog— odd, blobby, and generally damp.",
         "summaryNormal": "<a href=\"https://broccolimag.com/collections/magazines/products/mushroom-people-magazine-volume-2?variant=44668396208385\">Buy the issue here.</a>"
+      },
+      {
+        "id": "2",
+        "title": "DCSA announces conversion of Adjudication and Vetting Services to the Working Capital Fund",
+        "category": "Financial.",
+        "gridImage": "photos/DCSA.avif",
+        "image": "photos/DCSA.avif",
+        "link": "https://www.dcsa.mil/About-Us/News/Article/Article/3922246/dcsa-announces-conversion-of-adjudication-and-vetting-services-to-the-working-c/",
+        "linkText": "Read the article here",
+        "date": "October 2024",
+        "summaryItalic": "DCSA Adjudication and Vetting Services (AVS) is scheduled to convert its current appropriated funded program to a fee-for-service program under the agency’s Working Capital Fund (WCF) starting Oct. 1, 2024.<br>The conversion – supporting DCSA efforts to optimize delivery of its Personnel Security products and services to DOD and other federal agencies – is the result of the agency’s collaboration with the Office of the Under Secretary of Defense (OUSD) for Intelligence and Security (I&S) and OUSD (Comptroller). The move to a WCF fee-for-service program will provide a full-cost recovery financial operating model designed to increase business efficiency by facilitating optimal resource management.",
+        "summaryNormal": ""
+      },
+      {
+        "id": "3",
+        "title": "DCSA embraces intelligent automation for financial processes",
+        "category": "Financial.",
+        "gridImage": "photos/DCSA.avif",
+        "image": "photos/DCSA.avif",
+        "link": "https://www.dcsa.mil/About-Us/News/Article/Article/4114588/dcsa-embraces-intelligent-automation-for-financial-processes/",
+        "linkText": "Read the article here",
+        "date": "March 2025",
+        "summaryItalic": "DCSA has consistently embraced an unwavering commitment to fiscal responsibility, with its Office of the Chief Financial Officer (OCFO) at the forefront of financial management modernization. A key enabler of financial management at the speed of the mission? Intelligent automation.<br>Intelligent automation can manipulate, move, reconcile, verify and process data to liberate staff from tasks one might classify as pesky or tedious, empowering a shift of focus to more high-value, strategic work.<br>In total, OCFO has saved over 17,200 manpower hours across 28 automated solutions.",
+        "summaryNormal": ""
+      },
+      {
+        "id": "4",
+        "title": "Army’s powerful open source solid modeling system undergoes modernization",
+        "category": "Modeling and Simulation.",
+        "gridImage": "photos/Army1.jpg",
+        "image": "photos/Army1.jpg",
+        "link": "https://www.army.mil/article/249241/armys_powerful_open_source_solid_modeling_system_undergoes_modernization",
+        "linkText": "Read the article here",
+        "date": "September 2021",
+        "summaryItalic": "BRL-CAD’s source code repository, with more than one million lines of code, is the oldest known continuously developed open source repository in the world. BRL-CAD enables more than terrain, vehicle, weapon and human modeling — it can now model a range of items from household appliances to NASA tools, securing its place in industry and in history as a fundamental benefit to a variety of engineering analysis work.<br>This past year, DAC has been giving BRL-CAD something of a facelift. Clifford Yapp, DAC’s BRL-CAD model manager, is laying the groundwork to revamp BRL-CAD’s user interface, usability and overall functionality of the software.",
+        "summaryNormal": ""
+      },
+      {
+        "id": "5",
+        "title": "Deep Green Challenge",
+        "category": "Computational.",
+        "gridImage": "photos/army2.jpg",
+        "image": "photos/army2.jpg",
+        "link": "https://www.army.mil/article-amp/262291/devcom_analysis_center_winner_of_deep_green_challenge",
+        "linkText": "Read the article here",
+        "date": "November 2022",
+        "summaryItalic": "Teams worked toward a comprehensive classification model capable of categorizing every pixel in a computer vision digital image—a process called “semantic segmentation.” This challenge applied the semantic segmentation process to determine categories like fence, shrub or asphalt.<br>“Our best and brightest have been challenged to tap into their potential and develop innovative data driven solutions that can enable Army autonomous vehicle terrain perception.",
+        "summaryNormal": ""
+      },
+      {
+        "id": "6",
+        "title": "Steve Moore: In it for the long run – The McDaniel Free Press",
+        "category": "Human.",
+        "gridImage": "Steve-Moore.jpg",
+        "image": "Steve-Moore.jpg",
+        "link": "http://www.mcdanielfreepress.com/2017/11/08/steve-moore-in-it-for-the-long-run/",
+        "linkText": "Read the profile here",
+        "date": "November 2017",
+        "summaryItalic": "Across from the collection of sports snacks, beyond the racks of leggings and t-shirts, and next to the display of running shoes under street signs for \"Performance Drive\" and \"Stability Street\" hangs a chalkboard labeled \"Run Moore Goals.\" This special corner dons visitors' goals such as \"break school record for high jump,\" \"heal,\" \"beat brother-in-law in Disney 5K to win the respect of my spouse\" and \"to fly.\"",
+        "summaryNormal": ""
+      },
+      {
+        "id": "7",
+        "title": "Green Terror gets a makeover – The McDaniel Free Press",
+        "category": "Collegiate.",
+        "gridImage": "photos/green.jpg",
+        "image": "photos/green.jpg",
+        "link": "http://www.mcdanielfreepress.com/2017/10/18/green-terror-gets-a-makeover/",
+        "linkText": "Read the article here",
+        "date": "October 2017",
+        "summaryItalic": "“Hot and sweaty, and not in a good way,” said Atticus Rice, describing his experience as one of the several students who make the awkward transformation into McDaniel’s Green Terror mascot for campus events. “When I get in it now, we have to staple it together each time,” Rice, a junior from Portland, Oregon, added. “It looks like it was made in a basement.”<br>Rice is close. In the 1990s, when McDaniel was still known as Western Maryland College, an alumni’s mother created the homemade suit. McDaniel’s current model — a furry, green, wolf-like creature missing both footpads and multiple papier-mâché teeth — shuffles around to only a few campus events. While most mascots are meant to last seven years at most, ours is over 25."
+      },
+      {
+        "id": "8",
+        "title": "Army injury assessment tool receives stamp of accreditation | Article | The United States Army",
+        "category": "Injury Assessment and Safety.",
+        "gridImage": "photos/army3.jpg",
+        "image": "photos/army3.jpg",
+        "link": "https://www.army.mil/article/257648/",
+        "linkText": "Read the article here",
+        "date": "June 2022",
+        "summaryItalic": "Developed by the Instrumentation Management Office at the Program Executive Office Simulation, Training and Instrumentation, WIAMan represents the most human-like surrogate yet to provide insight on improving military ground vehicle systems and identify protection mechanisms that reduce the likelihood and severity of warfighter injuries.<br>While WIAMan is the hardware subjected to the blast event to record data, AMANDA is the software allowing the collected data to be processed for analysts' use, pre-loaded with accredited criterion for injury. The resulting analysis has significant impact on Army vehicle design to improve survivability when Soldiers are subjected to an underbody blast environment. Simply put, insight from AMANDA saves lives.",
+        "summaryNormal": "Front page of army.mil (June 28-30, 2022)"
+      },
+      {
+        "id": "9",
+        "title": "Collaborative agreement propels artificial intelligence",
+        "category": "Artificial Intelligence. Assistive Automation.",
+        "gridImage": "photos/army4.jpg",
+        "image": "photos/army4.jpg",
+        "link": "https://www.army.mil/article/257173/",
+        "linkText": "Read the article here",
+        "date": "June 2022",
+        "summaryItalic": "In its objective to drive transformational advances in artificial intelligence, the U.S. Army is bringing together diverse experts in military and academia to better assess how systems using artificial intelligence and assistive automation, or AI/AA, operate.<br>The U.S. Army Combat Capabilities Development Command, or DEVCOM, Analysis Center — known as DAC — has signed a cooperative agreement with Northeastern University to leverage their respective expertise to develop an analytic framework for evaluating automated or partially automated systems employing AI.",
+        "summaryNormal": "Front page of army.mil (May 13-17, 2022)<br>Army news line up top story (May 13, 2022)"
+      },
+      {
+        "id": "10",
+        "title": "Army vulnerability, lethality analysis bolstered through high-performance computing",
+        "category": "Computational. Modeling and Simulation.",
+        "gridImage": "photos/army5.jpg",
+        "image": "photos/army5.jpg",
+        "link": "https://www.army.mil/article/252336",
+        "linkText": "Read the article here",
+        "date": "April 2022",
+        "summaryItalic": "DAC's Timothy Mallory, mechanical engineer with 35 years in modeling & simulation, offers the metaphor of a 50,000 acre farm to describe HPC's impact. A single small tractor may eventually get the harvest done, but a \"mega-harvester\" with automation and GPS designed for large jobs will do it faster and more effectively. \"We've been able to accomplish with HPC what would not have been possible using AJEM on a regular desktop workstation. The cluster-nodes infrastructure allows for hundreds of thousands of AJEM results in a week.\"",
+        "summaryNormal": "Spurred media inquiry from<br>The Economist (July 2022)"
       }
     ]
   }
