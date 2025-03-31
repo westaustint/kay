@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
@@ -19,12 +23,19 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 3rem 1rem;
-  flex: 1;
+  flex: 1 0 auto; /* Changed from flex: 1 to ensure it grows properly */
 }
 
 /* Specific container adjustments for contact page */
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .contact-page .container {
   padding: 1.5rem 1rem;
+  flex: 1 0 auto; /* Ensure container fills available space */
 }
 
 @media (min-width: 768px) {
@@ -143,12 +154,12 @@ body {
   }
 
   .bio-image {
-    width: 33.333%;
+    width: 40%;
     flex-shrink: 0; /* Prevent the image from shrinking */
   }
 
   .bio-content {
-    width: 66.666%;
+    width: 60%;
   }
 }
 
