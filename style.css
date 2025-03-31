@@ -278,63 +278,106 @@ body {
 .project-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  max-width: 800px;
+  gap: 1.5rem;
+  max-width: 100%;
+  padding: 0 1rem;
   margin: 0 auto;
 }
 
 .project-image {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: auto;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.project-content {
+  width: 100%;
 }
 
 .project-content .project-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   color: #111;
 }
 
 .project-meta {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: #4b5563;
-}
-
-.project-meta a {
-  color: #2563eb;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.project-meta a:hover {
-  color: #1d4ed8;
-  text-decoration: underline;
+  font-size: 0.9rem;
 }
 
 .project-summary-italic {
   font-style: italic;
   margin-bottom: 1.5rem;
   color: #4b5563;
-  line-height: 1.7;
+  line-height: 1.5;
+  font-size: 0.95rem;
 }
 
 .project-summary-normal {
   color: #4b5563;
-  line-height: 1.6;
+  line-height: 1.5;
+  font-size: 0.95rem;
 }
 
+/* Media Queries - Tablet and above */
 @media (min-width: 768px) {
   .project-container {
     flex-direction: row;
     align-items: flex-start;
+    max-width: 800px;
+    padding: 0 2rem;
+    gap: 2rem;
   }
   
   .project-image {
     flex: 0 0 auto;
+    margin: 0;
   }
   
   .project-content {
     flex: 1 1 auto;
+  }
+
+  .project-content .project-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-meta {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .project-summary-italic,
+  .project-summary-normal {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* iPhone SE and other small screens */
+@media (max-width: 375px) {
+  .project-container {
+    gap: 1rem;
+    padding: 0 0.75rem;
+  }
+
+  .project-image {
+    max-width: 100%;
+  }
+  
+  .project-content .project-title {
+    font-size: 1.1rem;
+  }
+  
+  .project-meta,
+  .project-summary-italic,
+  .project-summary-normal {
+    font-size: 0.9rem;
   }
 }
 
