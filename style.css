@@ -133,15 +133,18 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 @media (min-width: 768px) {
   .bio-container {
     flex-direction: row;
+    flex-wrap: nowrap; /* Ensure no wrapping on larger screens */
   }
 
   .bio-image {
     width: 33.333%;
+    flex-shrink: 0; /* Prevent the image from shrinking */
   }
 
   .bio-content {
