@@ -170,6 +170,43 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Fix for bio text and bullets consistency */
+.bio-text p,
+.bio-text ul,
+.bio-text ol,
+.bio-text li {
+  font-size: 1.125rem;
+  color: #4b5563;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Add appropriate padding for list items to prevent cut-off */
+.bio-text ul,
+.bio-text ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 640px) {
+  .bio-text ul,
+  .bio-text ol {
+    padding-left: 1.25rem;
+  }
+}
+
+/* Make sure even on very small screens bullets are visible */
+@media (max-width: 375px) {
+  .bio-text {
+    padding-right: 0.5rem;
+  }
+  
+  .bio-text ul,
+  .bio-text ol {
+    padding-left: 1rem;
+  }
+}
+
 .skills-title {
   font-size: 1.5rem;
   font-weight: 600;
