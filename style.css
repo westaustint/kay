@@ -22,6 +22,17 @@ body {
   flex: 1;
 }
 
+/* Specific container adjustments for contact page */
+.contact-page .container {
+  padding: 1.5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .contact-page .container {
+    padding: 3rem 1rem;
+  }
+}
+
 /* Navigation */
 .navbar {
   border-bottom: 1px solid #e5e7eb;
@@ -190,31 +201,46 @@ body {
 .contact-title {
   font-size: 2.25rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .contact-subtitle {
   font-size: 1.25rem;
   color: #4b5563;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 @media (min-width: 768px) {
   .contact-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .contact-title {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-subtitle {
+    margin-bottom: 2.5rem;
   }
 }
 
 .contact-card {
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #f9fafb;
   border-radius: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .contact-card {
+    padding: 1rem;
+  }
 }
 
 .card-title {
@@ -223,9 +249,23 @@ body {
   margin-bottom: 0.5rem;
 }
 
+@media (max-width: 640px) {
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
 .card-text {
   color: #4b5563;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .card-text {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
 }
 
 .card-link {
@@ -387,6 +427,17 @@ body {
   border-top: 1px solid #e5e7eb;
   padding: 2rem 0;
   margin-top: 2rem;
+}
+
+.contact-page .footer {
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .contact-page .footer {
+    padding: 1.5rem 0;
+  }
 }
 
 .footer-container {
