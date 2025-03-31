@@ -62,23 +62,9 @@
 </main>
 <footer class="footer">
 <div class="footer-container">
-<a href="https://www.linkedin.com/in/kaylan-hutchison/" id="linkedin-link" class="footer-link">LinkedIn</a>
+<a href="https://www.linkedin.com/in/kaylan-hutchison/" class="footer-link">LinkedIn</a>
 <a href="mailto:kaylan.hutchison@gmail.com" class="footer-link">Email</a>
 </div>
 </footer>
-<script>
-// Check if the user is on a mobile device
-if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-document.getElementById('linkedin-link').addEventListener('click', function(e) {
-e.preventDefault();
-// Try to open the LinkedIn app
-window.location.href = 'linkedin://profile/in/kaylan-hutchison';
-// Redirect to web version after a delay if app doesn't open
-setTimeout(function() {
-window.location.href = 'https://www.linkedin.com/in/kaylan-hutchison/';
- }, 2000);
- });
- }
-</script>
 </body>
 </html>

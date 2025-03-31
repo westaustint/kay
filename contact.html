@@ -36,7 +36,7 @@
 <div class="contact-card">
 <h2 class="card-title">Connect on LinkedIn</h2>
 <p class="card-text">Let's grow our professional network</p>
-<a href="https://www.linkedin.com/in/kaylan-hutchison/" id="linkedin-link" class="card-link">
+<a href="https://www.linkedin.com/in/kaylan-hutchison/" class="card-link">
  View Profile
 <span class="arrow">→</span>
 </a>
@@ -45,21 +45,6 @@
 </div>
 </main>
 
-<script>
-  // Check if the user is on a mobile device
-  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-    document.getElementById('linkedin-link').addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      // Try to open the LinkedIn app
-      window.location.href = 'linkedin://profile/in/kaylan-hutchison';
-      
-      // Redirect to web version after a delay if app doesn't open
-      setTimeout(function() {
-        window.location.href = 'https://www.linkedin.com/in/kaylan-hutchison/';
-      }, 2000);
-    });
-  }
-</script>
+
 </body>
 </html>

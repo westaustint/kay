@@ -139,8 +139,8 @@ body {
 }
 
 .profile-image {
-  width: 16rem;
-  height: 16rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto;
@@ -184,6 +184,7 @@ body {
   max-width: 42rem;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .contact-title {
@@ -385,7 +386,7 @@ body {
 .footer {
   border-top: 1px solid #e5e7eb;
   padding: 2rem 0;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .footer-container {
