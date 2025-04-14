@@ -14,30 +14,6 @@
     },
     {
       "id": "2",
-      "title": "INJURY ASSESSMENT TOOL RECEIVES STAMP OF ACCREDITATION",
-      "category": "Injury Assessment and Safety.",
-      "gridImage": "photos/army3.jpg",
-      "image": "photos/army3.jpg",
-      "link": "https://www.army.mil/article/255192",
-      "linkText": "Read the article here",
-      "date": "June 2022",
-      "summaryItalic": "Developed by the Instrumentation Management Office at the Program Executive Office Simulation, Training and Instrumentation, WIAMan represents the most human-like surrogate yet to provide insight on improving military ground vehicle systems and identify protection mechanisms that reduce the likelihood and severity of warfighter injuries.<br><br> While WIAMan is the hardware subjected to the blast event to record data, AMANDA is the software allowing the collected data to be processed for analysts' use, pre-loaded with accredited criterion for injury. The resulting analysis has significant impact on Army vehicle design to improve survivability when Soldiers are subjected to an underbody blast environment. Simply put, insight from AMANDA saves lives.",
-      "summaryNormal": "Front page of army.mil (June 28-30, 2022)"
-    },
-    {
-      "id": "3",
-      "title": "DCSA SERVICE TRANSITION TO THE WORKING CAPITAL FUND",
-      "category": "Financial.",
-      "gridImage": "photos/DCSA.avif",
-      "image": "photos/DCSA.avif",
-      "link": "https://www.dcsa.mil/About-Us/News/Article/Article/3922246/dcsa-announces-conversion-of-adjudication-and-vetting-services-to-the-working-c/",
-      "linkText": "Read the article here",
-      "date": "October 2024",
-      "summaryItalic": "DCSA Adjudication and Vetting Services (AVS) is scheduled to convert its current appropriated funded program to a fee-for-service program under the agency's Working Capital Fund (WCF) starting Oct. 1, 2024.<br><br> The conversion – supporting DCSA efforts to optimize delivery of its Personnel Security products and services to DOD and other federal agencies – is the result of the agency's collaboration with the Office of the Under Secretary of Defense (OUSD) for Intelligence and Security (I&S) and OUSD (Comptroller). The move to a WCF fee-for-service program will provide a full-cost recovery financial operating model designed to increase business efficiency by facilitating optimal resource management.",
-      "summaryNormal": ""
-    },
-    {
-      "id": "4",
       "title": "OPEN SOURCE MODELING SYSTEM UNDERGOES MODERNIZATION",
       "category": "Modeling and Simulation.",
       "gridImage": "photos/Army1.jpg",
@@ -49,7 +25,31 @@
       "summaryNormal": ""
     },
     {
-      "id": "5",
+      "id": "3",
+      "title": "INJURY ASSESSMENT TOOL RECEIVES STAMP OF ACCREDITATION",
+      "category": "Injury Assessment and Safety.",
+      "gridImage": "photos/army3.jpg",
+      "image": "photos/army3.jpg",
+      "link": "https://www.army.mil/article/255192",
+      "linkText": "Read the article here",
+      "date": "June 2022",
+      "summaryItalic": "Developed by the Instrumentation Management Office at the Program Executive Office Simulation, Training and Instrumentation, WIAMan represents the most human-like surrogate yet to provide insight on improving military ground vehicle systems and identify protection mechanisms that reduce the likelihood and severity of warfighter injuries.<br><br> While WIAMan is the hardware subjected to the blast event to record data, AMANDA is the software allowing the collected data to be processed for analysts' use, pre-loaded with accredited criterion for injury. The resulting analysis has significant impact on Army vehicle design to improve survivability when Soldiers are subjected to an underbody blast environment. Simply put, insight from AMANDA saves lives.",
+      "summaryNormal": "Front page of army.mil (June 28-30, 2022)"
+    },
+    {
+      "id": "4",
+      "title": "DCSA SERVICE TRANSITION TO THE WORKING CAPITAL FUND",
+      "category": "Financial.",
+      "gridImage": "photos/DCSA.avif",
+      "image": "photos/DCSA.avif",
+      "link": "https://www.dcsa.mil/About-Us/News/Article/Article/3922246/dcsa-announces-conversion-of-adjudication-and-vetting-services-to-the-working-c/",
+      "linkText": "Read the article here",
+      "date": "October 2024",
+      "summaryItalic": "DCSA Adjudication and Vetting Services (AVS) is scheduled to convert its current appropriated funded program to a fee-for-service program under the agency's Working Capital Fund (WCF) starting Oct. 1, 2024.<br><br> The conversion – supporting DCSA efforts to optimize delivery of its Personnel Security products and services to DOD and other federal agencies – is the result of the agency's collaboration with the Office of the Under Secretary of Defense (OUSD) for Intelligence and Security (I&S) and OUSD (Comptroller). The move to a WCF fee-for-service program will provide a full-cost recovery financial operating model designed to increase business efficiency by facilitating optimal resource management.",
+      "summaryNormal": ""
+    },
+    {
+      "id": "6",
       "title": "DCSA EMBRACES INTELLIGENT AUTOMATION FOR FINANCIAL PROCESSES",
       "category": "Financial.",
       "gridImage": "photos/DCSA.avif",
@@ -61,7 +61,7 @@
       "summaryNormal": ""
     },
     {
-      "id": "6",
+      "id": "5",
       "title": "DEEP GREEN CHALLENGE",
       "category": "Computational.",
       "gridImage": "photos/army2.jpg",
