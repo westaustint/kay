@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "MEET THE SLIME MOLDS",
-      "category": "Biological. Computational.",
+      "category": "Biology and Computation.",
       "gridImage": "photos/SlimeMold.jpeg",
       "image": "photos/SlimeMoldPdf.png",
       "link": "docs/Meet the Slime Molds.pdf",
@@ -25,6 +25,18 @@
       "summaryNormal": ""
     },
     {
+      "id": "12",
+      "title": "TRANSFORMING FISCAL YEAR CLOSEOUT WITH INTELLIGENT AUTOMATION",
+      "category": "Finance and Automation.",
+      "gridImage": "photos/fiscalyear.png",
+      "image": "photos/AFCM.png",
+      "link": "docs/DCSA_SDFM_Article_Winter_2025.pdf",
+      "linkText": "Read the article here",
+      "date": "February 2025",
+      "summaryItalic": "The Defense Counterintelligence and Security Agency (DCSA) is stepping boldly into the future, revolutionizing financial management through cutting-edge intelligent automation. With a vision to streamline processes, boost efficiency, and enhance data integrity, DCSA is reshaping the way financial operations are executed, driving results at the speed of mission.<br>DCSA, the nation's largest provider of investigative services supporting over 100 federal agencies, has consistently embraced change. Celebrating its fifth anniversary at the start of fiscal year 2025, DCSA's growth reflects a larger transformation. Following the 2019 Executive Order 13869, DCSA unified multiple agencies under its umbrella, bringing together the National Background Investigations Bureau, the Defense Security Service, and the Department of Defense Consolidated Adjudications Facility into one streamlined powerhouse. With this transformation came an unwavering commitment to fiscal responsibility. DCSA's Office of the Chief Financial Officer (OCFO) has been at the forefront, using automation to accelerate financial cycles, reduce error-prone manual processes, and free up staff to focus on high-value, strategic work.",
+      "summaryNormal": "<a href=\"https://broccolimag.com/collections/magazines/products/mushroom-people-magazine-volume-2?variant=44668396208385\">Buy the issue here.</a>"
+    },
+    {
       "id": "3",
       "title": "INJURY ASSESSMENT TOOL RECEIVES STAMP OF ACCREDITATION",
       "category": "Injury Assessment and Safety.",
@@ -34,12 +46,12 @@
       "linkText": "Read the article here",
       "date": "June 2022",
       "summaryItalic": "Developed by the Instrumentation Management Office at the Program Executive Office Simulation, Training and Instrumentation, WIAMan represents the most human-like surrogate yet to provide insight on improving military ground vehicle systems and identify protection mechanisms that reduce the likelihood and severity of warfighter injuries.<br><br> While WIAMan is the hardware subjected to the blast event to record data, AMANDA is the software allowing the collected data to be processed for analysts' use, pre-loaded with accredited criterion for injury. The resulting analysis has significant impact on Army vehicle design to improve survivability when Soldiers are subjected to an underbody blast environment. Simply put, insight from AMANDA saves lives.",
-      "summaryNormal": "Front page of army.mil (June 28-30, 2022)"
+      "summaryNormal": "Highlights:<br>Front page of army.mil (June 28-30, 2022)"
     },
     {
       "id": "4",
-      "title": "DCSA SERVICE TRANSITION TO THE WORKING CAPITAL FUND",
-      "category": "Financial.",
+      "title": "DCSA SERVICE TRANSITIONS TO THE WORKING CAPITAL FUND",
+      "category": "Finance.",
       "gridImage": "photos/DCSA.avif",
       "image": "photos/DCSA.avif",
       "link": "https://www.dcsa.mil/About-Us/News/Article/Article/3922246/dcsa-announces-conversion-of-adjudication-and-vetting-services-to-the-working-c/",
@@ -49,21 +61,9 @@
       "summaryNormal": ""
     },
     {
-      "id": "6",
-      "title": "DCSA EMBRACES INTELLIGENT AUTOMATION FOR FINANCIAL PROCESSES",
-      "category": "Financial.",
-      "gridImage": "photos/DCSA.avif",
-      "image": "photos/DCSA.avif",
-      "link": "https://www.dcsa.mil/About-Us/News/Article/Article/4114588/dcsa-embraces-intelligent-automation-for-financial-processes/",
-      "linkText": "Read the article here",
-      "date": "March 2025",
-      "summaryItalic": "DCSA has consistently embraced an unwavering commitment to fiscal responsibility, with its Office of the Chief Financial Officer (OCFO) at the forefront of financial management modernization. A key enabler of financial management at the speed of the mission? Intelligent automation.<br><br> Intelligent automation can manipulate, move, reconcile, verify and process data to liberate staff from tasks one might classify as pesky or tedious, empowering a shift of focus to more high-value, strategic work.<br><br> In total, OCFO has saved over 17,200 manpower hours across 28 automated solutions.",
-      "summaryNormal": ""
-    },
-    {
       "id": "5",
-      "title": "DEEP GREEN CHALLENGE",
-      "category": "Computational.",
+      "title": "DEEP GREEN CHALLENGE WINNING TEAM SELECTED",
+      "category": "Computation.",
       "gridImage": "photos/army2.jpg",
       "image": "photos/army2.jpg",
       "link": "https://www.army.mil/article-amp/262291/devcom_analysis_center_winner_of_deep_green_challenge",
@@ -73,28 +73,40 @@
       "summaryNormal": ""
     },
     {
+      "id": "6",
+      "title": "DCSA EMBRACES INTELLIGENT AUTOMATION FOR FINANCIAL PROCESSES",
+      "category": "Finance.",
+      "gridImage": "photos/DCSA.avif",
+      "image": "photos/DCSA.avif",
+      "link": "https://www.dcsa.mil/About-Us/News/Article/Article/4114588/dcsa-embraces-intelligent-automation-for-financial-processes/",
+      "linkText": "Read the article here",
+      "date": "March 2025",
+      "summaryItalic": "DCSA has consistently embraced an unwavering commitment to fiscal responsibility, with its Office of the Chief Financial Officer (OCFO) at the forefront of financial management modernization. A key enabler of financial management at the speed of the mission? Intelligent automation.<br><br> Intelligent automation can manipulate, move, reconcile, verify and process data to liberate staff from tasks one might classify as pesky or tedious, empowering a shift of focus to more high-value, strategic work.<br><br> In total, OCFO has saved over 17,200 manpower hours across 28 automated solutions.",
+      "summaryNormal": ""
+    },
+    {
       "id": "7",
       "title": "COLLABORATIVE AGREEMENT PROPELS ARTIFICIAL INTELLIGENCE",
-      "category": "Artificial Intelligence. Assistive Automation.",
+      "category": "Artificial Intelligence and Assistive Automation.",
       "gridImage": "photos/army4.jpg",
       "image": "photos/army4.jpg",
       "link": "https://www.army.mil/article/257531",
       "linkText": "Read the article here",
       "date": "June 2022",
       "summaryItalic": "In its objective to drive transformational advances in artificial intelligence, the U.S. Army is bringing together diverse experts in military and academia to better assess how systems using artificial intelligence and assistive automation, or AI/AA, operate.<br><br>The U.S. Army Combat Capabilities Development Command, or DEVCOM, Analysis Center — known as DAC — has signed a cooperative agreement with Northeastern University to leverage their respective expertise to develop an analytic framework for evaluating automated or partially automated systems employing AI.",
-      "summaryNormal": "Front page of army.mil (May 13-17, 2022)<br>Army news line up top story (May 13, 2022)"
+      "summaryNormal": "Highlights:<br>Front page of army.mil (May 13-17, 2022)<br>Army news line up top story (May 13, 2022)"
     },
     {
       "id": "8",
       "title": "VULNERABILITY, LETHALITY ANALYSIS BOLSTERED THROUGH HIGH-PERFORMANCE COMPUTING",
-      "category": "Computational. Modeling and Simulation.",
+      "category": "Modeling and Simulation.",
       "gridImage": "photos/army5.jpg",
       "image": "photos/army5.jpg",
       "link": "https://www.army.mil/article/252336",
       "linkText": "Read the article here",
       "date": "April 2022",
       "summaryItalic": "DAC's Timothy Mallory, mechanical engineer with 35 years in modeling & simulation, offers the metaphor of a 50,000 acre farm to describe HPC's impact. A single small tractor may eventually get the harvest done, but a \"mega-harvester\" with automation and GPS designed for large jobs will do it faster and more effectively. \"We've been able to accomplish with HPC what would not have been possible using AJEM on a regular desktop workstation. The cluster-nodes infrastructure allows for hundreds of thousands of AJEM results in a week.\"",
-      "summaryNormal": "Spurred media inquiry from <i>The Economist</i> (July 2022)"
+      "summaryNormal": "Highlights:<br>Spurred media inquiry from <i>The Economist</i> (July 2022)"
     },
     {
       "id": "9",
@@ -106,7 +118,7 @@
       "linkText": "Buy the Winter/Spring 2023 – Vol. 117 issue here",
       "date": "June 2023",
       "summaryItalic": "snaked between sprawling and standing<br>without needing to be refrigerated later,<br>our glitch innovation of<br>the woven basket. I'll send you<br>the glue trap bed and the orange steeping<br>tea light along with the shovel and gel pen.<br>All my teeth fell out last night.<br>Nevermind, close the latch, what I want<br>to say to you is don't feel burdened<br>to grit my prey or fill it with dried blossoms.<br>On some days, a plot. On some days, an ice pick.<br>Hold out your hands like this. Cup your palms.<br>Let me complete my kill by narration.<br>Take home whatever lands. You decide<br>if we need a mounted<br>stag antler or fang necklace,<br>I'm saying make a plate so I can get it off my counter.<br>I'll close my eyes while you decide<br>whether you let its shadow bounce off<br>corners or soak into them, raise it until it cradles<br>small dreams as its own, tell it<br>to chew with its mouth closed,<br>set it free to feed the scavengers.<br>What do we do with invasive species,<br>shake them really hard?<br>Bassinet viper, dirty thing, dream journal,<br>remember the ideal against which I adjust you and my past lives beside?<br>When this thing breaks inside of me<br>it will be only feral things<br>that I carry home.",
-      "summaryNormal": "Poet Lore is America's oldest poetry journal, a biannual print publication showcasing the finest established contemporary writers alongside emerging poets.<br><br>\"Everything I dreamt last night fit into one clean voice memo\" was one of two poems published in this journal. My poetry can also be found in Tiny Spoon and Mid-Heaven Literary Magazine."
+      "summaryNormal": "About the Publication:<br>Poet Lore is America's oldest poetry journal, a biannual print publication showcasing the finest established contemporary writers alongside emerging poets.<br><br>\"Everything I dreamt last night fit into one clean voice memo\" was one of two poems published in this journal. My poetry can also be found in Tiny Spoon and Mid-Heaven Literary Magazine."
     },
     {
       "id": "10",
@@ -123,7 +135,7 @@
     {
       "id": "11",
       "title": "GREEN TERROR GETS A MAKEOVER",
-      "category": "Collegiate.",
+      "category": "College News.",
       "gridImage": "photos/green.jpg",
       "image": "photos/green.jpg",
       "link": "http://www.mcdanielfreepress.com/2017/10/18/green-terror-gets-a-makeover/",

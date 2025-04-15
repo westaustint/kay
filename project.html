@@ -29,14 +29,7 @@
           document.getElementById('project-link').textContent = project.linkText;
           document.getElementById('project-date').textContent = project.date;
           document.getElementById('project-summary-italic').innerHTML = project.summaryItalic;
-          
-          const highlightsHeader = document.createElement('h2');
-          highlightsHeader.textContent = 'Highlights:';
-          highlightsHeader.className = 'project-highlights-title';
-
-          const summaryNormalElement = document.getElementById('project-summary-normal');
-          summaryNormalElement.insertBefore(highlightsHeader, summaryNormalElement.firstChild);
-          summaryNormalElement.innerHTML = project.summaryNormal;
+          document.getElementById('project-summary-normal').innerHTML = project.summaryNormal;
         }
       })
       .catch(error => console.error('Error loading project data:', error));
