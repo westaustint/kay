@@ -415,6 +415,54 @@ body {
   font-size: 0.95rem;
 }
 
+.highlights-section {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  display: none; /* Hidden by default, will be shown via JS when highlights exist */
+}
+
+.highlights-title {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #111;
+}
+
+.highlights-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.highlights-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.highlights-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #2563eb;
+  border-radius: 50%;
+}
+
+/* Responsive adjustments for highlights */
+@media (max-width: 768px) {
+  .highlights-list li {
+    padding-left: 1.25rem;
+  }
+  
+  .highlights-list li::before {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+}
+
 /* Media Queries - Tablet and above */
 @media (min-width: 768px) {
   .project-container {

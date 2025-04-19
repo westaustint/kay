@@ -6,6 +6,16 @@
 <title id="page-title">Kaylan Hutchison</title>
 <link rel="stylesheet" href="style.css">
 <script>
+  // Function to create list items from highlights array
+  function createHighlightsList(highlights) {
+    if (!highlights || !Array.isArray(highlights) || highlights.length === 0) {
+      return null;
+    }
+    
+    // Generate HTML list items from the highlights array
+    return highlights.map(highlight => `<li>${highlight}</li>`).join('');
+  }
+
   // Function to load project content
   function loadProjectContent() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -29,7 +39,19 @@
           document.getElementById('project-link').textContent = project.linkText;
           document.getElementById('project-date').textContent = project.date;
           document.getElementById('project-summary-italic').innerHTML = project.summaryItalic;
+          
+          // Update the normal summary
           document.getElementById('project-summary-normal').innerHTML = project.summaryNormal;
+          
+          // Update the highlights section if highlights array exists
+          const highlightsSection = document.getElementById('highlights-section');
+          if (project.highlights && Array.isArray(project.highlights) && project.highlights.length > 0) {
+            highlightsSection.style.display = 'block';
+            const highlightsContent = createHighlightsList(project.highlights);
+            document.getElementById('highlights-list').innerHTML = highlightsContent;
+          } else {
+            highlightsSection.style.display = 'none';
+          }
         }
       })
       .catch(error => console.error('Error loading project data:', error));
@@ -67,6 +89,14 @@
         
         <div id="project-summary-normal" class="project-summary-normal">
             Loading project content...
+        </div>
+        
+        <!-- New Highlights Section -->
+        <div id="highlights-section" class="highlights-section">
+            <h3 class="highlights-title">Highlights:</h3>
+            <ul id="highlights-list" class="highlights-list">
+                <!-- Highlights will be loaded here -->
+            </ul>
         </div>
     </div>
 </div>
